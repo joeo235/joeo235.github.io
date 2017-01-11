@@ -9,9 +9,12 @@ function clear(obj) {
     obj.value = '';
     clear = false;
   }
+
 }
 //Transition effects for navigation (active/inactive states)
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
+}
+
