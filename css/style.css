@@ -1,0 +1,91 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://dl.dropboxusercontent.com/s/6npj7cdtm5eqilm/tree_bark.png?dl=0paper.gif");
+  background-color: #cccccc;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif; 
+}
+
+
+.navbar-brand {
+  font-family: "Pacifico", sans-serif; 
+  font-size: 2em;
+}
+#landing-header {
+  background-image:url('https://dl.dropboxusercontent.com./s/b9dfu5umdd92486/seedlings.JPG');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 800px;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.motto {
+  padding: 30% 10% 0 10%;
+  text-align: left;
+}
+.title {
+  color: #ffffff;
+  font-size: 5em;
+  text-shadow: 2px 2px #aaa;
+  vertical-align: middle;
+  background-image:url('https://dl.dropboxusercontent.com/s/er5bx9zwh43ygw6/000000-0.5.png');
+}
+.tan {
+  background-color: #D7DFC9;
+}
+.blue {
+  background-color: #006D80;
+}
+.gray {
+  background-color: #565950;
+  color: #ffffff;
+}
+.about {
+  margin-top: -1em;
+  font-size: 1.5em;
+  padding: 4em;
+}
+img.avatar {
+  margin: 0 auto;
+}
+.projects {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.projects img {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project {
+  display: block;
+}
+.project p, .project h3 {
+  text-align: left;
+}
+.credits {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.credits span {
+  font-size: 12em;
+}
+#contact {
+  color: #333;
+}
+#contactform label {
+  color: #fff;
+}
+#credits list-group-item {
+  color: #333;
+}
