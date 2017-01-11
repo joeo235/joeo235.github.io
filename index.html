@@ -1,7 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Fixed Container</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700|Pacifico|Raleway:400,900'>
+<link rel='stylesheet prefetch' href='https://dl.dropboxusercontent.com/s/10c753jy3atbsey/aos.css?dl=0'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!--Group brand and toggle together for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar">
+        <span class="icon-bar"></span>  
+      </button>
+      <a class="navbar-brand" href="#">Joe Olivier</a>
+    </div>
+    <!-- Group nav links for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-credits">Contact &amp; Credits</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div id="landing-header">
+      <div class="motto">
+        <h1 class="text-uppercase title">Great things start small and take time to grow.</h1>
+      </div>
+    </div>
+  </div>
+  <section class="row tan about" id="about">
+    <div class="col-md-12">
+      <div class="wrapper" data-aos="fade-right">
+        <img class="img-responsive avatar" src="https://dl.dropboxusercontent.com/s/atptjpu9rgfyozo/nerd-man-with-curly-hair-and-circular-eyeglasses-avatar.png" width="256" height="256" alt="Man with curly hair and glasses icon">
+        <h1 class="text-center">Hi, I'm Joe.</h1>
+      </div>
+      <p>I'm a web content guy learning to become more of a web development guy. Currently I work at DePaul University in Chicago. Things I do a lot at work: writing web content, producing short videos, orchestrating email campaigns, managing a bunch of websites. As you might guess, a lot of my current projects stem from my work at DePaul. But I like to stay busy learning to code at <a href="http://freecodecamp.com">Free Code Camp</a> and hope to be adding more personal projects soon.</p>
+    </div>
+  </section>
+  <section class="row blue projects" id="projects">
+    <img src="https://dl.dropboxusercontent.com/s/w6hdvdeon688hf2/projects.png" class="img-responsive" width="220" height="220" alt="Projects icon">
+    <h1 class="text-center">Projects</h1>
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="http://codepen.io/joeo235/full/akrQOo/"><img src=" https://dl.dropboxusercontent.com/s/93amuvubaampe2a/devezin-thumb.jpg" class="img-responsive" width="400" alt="Screenshot of Tribute Page"></a>
+        <h3>Tribute to Pierre Francois Olivier de Vezin</h3>
+        <p>I created this webpage to honor my fifth-great paternal grandfather, who emigrated from France to Quebec, helping to establish what would be the first iron forge and industry town in Canada.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="http://resources.depaul.edu/teaching-commons/Pages/default.aspx"><img src="https://dl.dropboxusercontent.com/s/r2emle3i5g4m6pv/teaching-commons-thumb.jpg" class="img-responsive" width="400" alt="Screenshot of teachingcommons.depaul.edu"></a>
+        <h3>Teaching Commons</h3>
+        <p>I took this website, originally created in an ugly (and now defunct) CMS called Serena Collage, and made it pretty, despite it being a SharePoint site. I also reworked the IA, written a bunch of content, and produced many of the videos too.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="http://resources.depaul.edu/teaching-commons/Pages/default.aspx"><img src=" https://dl.dropboxusercontent.com/s/9c4o03qmiilui0w/tla-thumb.jpg" class="img-responsive" width="400" height="" alt="Screenshot of Office for Teaching, Learning and Assessment Website"></a>
+        <h3>Office for Teaching, Learning and Assessment</h3>
+        <p>Eek&mdash;this site was originally created and maintained in Dreamweaver (what a mess). I migrated the site over to SharePoint and revised the IA. Now visitors can see upcoming events, read the latest blog posts, and more.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="https://resources.depaul.edu/student-success/Pages/default.aspx"><img src=" https://dl.dropboxusercontent.com/s/ujkatxqxdlbo6us/student-success-thumb.jpg?dl=0" class="img-responsive" width="400" height="" alt="Screenshot of Student Success Website"></a>
+        <h3>Student Success</h3>
+        <p>I created this site using DePaul's SharePoint framework (loosely based on Bootstrap with a few JS plugins for things like sliders, etc.). For the first time, students can view all the tutoring options in place, in addition to other kinds of support
+          like mentoring, advising, and health services.</p>
+      </div>
+    </div>
+  </section>
+  <section class="row blue projects">
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="http://www.depaultla.org/"><img src="https://dl.dropboxusercontent.com/s/aafsebrm5jnj711/learning-in-progress-thumb.jpg" width="400" class="img-responsive" alt="Learning in Progress screenshot"></a>
+        <h3>Learning in Progress</h3>
+        <p>This is a blog for the Office for Teaching, Learning and Assessment that I set up using WordPress. I created a custom child theme and provided direction on the logo. I also occasionaly write blog posts&mdash;actually, I'm probably overdue for writing another one!</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="http://tlcp.depaultla.org/"><img src="https://dl.dropboxusercontent.com/s/vzq098txp03ro8j/tlcp-thumb.jpg" width="400" class="img-responsive" alt="Teaching and Learning Certificate Program screenshot"></a>
+        <h3>Teaching and Learning Certificate Program</h3>
+        <p>This is another WordPress site that I got up and running for one of our office's certificate programs. I did a little editing of the WordPress loop in PHP and some custom styling. Check out the cool videos I helped produce.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="project" data-aos="fade-up">
+        <a href="http://acp.depaultla.org/"><img src="https://dl.dropboxusercontent.com/s/i190r4mf6xs829o/acp-thumb.jpg" width="400" class="img-responsive"></a>
+        <h3>Assessment Certificate Program</h3>
+        <p>This is another WordPress site that is a part of our office's WordPress multisite installation, which I set up. And there are more cool videos to check out, produced by me and my student employee!</p>
+      </div>
+    </div>
+  </section>
+  <section class="row credits gray" id="contact-credits">
+    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+    <h1>Contact &amp; Credits</h1>
+    <div class="col-md-offset-3 col-md-6">
+      <h2>Contact Me</h2>
+      <div id="contactform" class="text-left" data-aos="fade-right">
+        <form id="contact" action="https://formspree.io/josephaolivier@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required />
+          </div>  
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" name="_replyto" id="email" class="form-control" placeholder="Email Address" required />
+          </div>
+          <div class="form-group" id="hiddenInputs">
+            <input type="hidden" name="_subject" value="Website contact" />
+            <input type="text" name="_gotcha" style="display:none" />
+          </div>  
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" value="Your Message" placeholder="Write me a note here." class="form-control" rows="5" required></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+    <div class="col-md-offset-3 col-md-6 text-left" id="credits" data-aos="fade-left">
+      <h2 class="text-center">Credits</h2>
+      <ul>
+        <li>Photo of seedlings - Taken by myself with my trusty old iPhone 5c.</li>
+        <li>Curly headed dude icon designed by <a href="http://www.flaticon.com/free-icon/nerd-man-with-curly-hair-and-circular-eyeglasses-avatar_53172">Freepik from Flaticon</a>.</li>
+        <li>Asterisk icon - Included in <a href="http://glyphicons.com/">Glyphicons</li> pack that comes with <a href-"http://getbootstrap.com/">Bootstrap</a>, which I'm also using.</li>
+        <li>Form action by <a href="https://formspree.io/">Formspree.io</a></li>
+      </ul>
+    </div>
+  </section>
+</div>
+<!-- end .container-fluid -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://dl.dropboxusercontent.com/s/qbhhlabjxizs8m7/aos.js?dl=0'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
