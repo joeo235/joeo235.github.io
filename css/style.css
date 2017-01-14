@@ -89,3 +89,7 @@ img.avatar {
 #credits list-group-item {
   color: #333;
 }
+#credits ul li a {
+  color: #fff;
+  text-decoration: underline;
+}
