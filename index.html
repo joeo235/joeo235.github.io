@@ -4,7 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Joe Olivier</title>
-<meta name="description" content="Joe Olivier — personal homepage.">
+<meta name="description" content="Joe Olivier — Learning Experience Designer.">
+<link rel="canonical" href="https://joeo235.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Joe Olivier">
+<meta property="og:description" content="Learning Experience Designer.">
+<meta property="og:url" content="https://joeo235.github.io/">
 <link rel="icon" href="data:,">
 <style>
   :root {
@@ -12,6 +17,8 @@
     --bg: #fbfbf9;
     --fg: #1a1a18;
     --muted: #6b6b63;
+    --rule: #e2e2dc;
+    --link: #3a5a40;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -19,6 +26,8 @@
       --bg: #14141a;
       --fg: #ecece8;
       --muted: #9a9a92;
+      --rule: #2c2c34;
+      --link: #a8c3a0;
     }
   }
 
@@ -62,12 +71,36 @@
     text-wrap: pretty;
   }
 
+  nav {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  a {
+    color: var(--link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+    border-radius: 2px;
+  }
+
+  a:hover { text-decoration-thickness: 2px; }
+
+  a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+    text-decoration: none;
+  }
+
 </style>
 </head>
 <body>
   <main>
     <h1>Joe Olivier</h1>
-    <p class="bio">This page is being rebuilt.</p>
+    <p class="bio">Learning Experience Designer</p>
+    <nav>
+      <a rel="me" href="https://www.linkedin.com/in/joeolivier/">LinkedIn</a>
+    </nav>
   </main>
 </body>
 </html>
