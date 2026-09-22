@@ -19,6 +19,8 @@
     --muted: #6b6b63;
     --rule: #e2e2dc;
     --link: #3a5a40;
+    --skyline: #3a5a40;
+    --skyline-opacity: 0.22;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -28,6 +30,8 @@
       --muted: #9a9a92;
       --rule: #2c2c34;
       --link: #a8c3a0;
+      --skyline: #a8c3a0;
+      --skyline-opacity: 0.20;
     }
   }
 
@@ -92,6 +96,43 @@
     text-decoration: none;
   }
 
+  /* Decorative Chicago skyline, anchored to the bottom of the viewport. */
+  .skyline {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    color: var(--skyline);
+    opacity: var(--skyline-opacity);
+    pointer-events: none;
+  }
+
+  .skyline svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Below this width, shrinking the whole skyline to fit makes the towers
+     unreadably small, so hold a minimum width and let the wrapper crop the
+     ends instead, keeping the tall cluster centered. */
+  @media (max-width: 760px) {
+    .skyline svg {
+      width: 760px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  /* On a short viewport the skyline would crowd the text. */
+  @media (max-height: 430px) {
+    .skyline { display: none; }
+  }
+
 </style>
 </head>
 <body>
@@ -102,5 +143,73 @@
       <a rel="me" href="https://www.linkedin.com/in/joeolivier/">LinkedIn</a>
     </nav>
   </main>
+
+  <!-- Stylized Chicago skyline, left to right: Marina City, Trump Tower,
+       Aon Center, Two Prudential Plaza, Willis Tower, 311 S Wacker,
+       and the John Hancock Center. Decorative, so hidden from assistive tech. -->
+  <div class="skyline" aria-hidden="true">
+  <svg viewBox="0 0 1200 220" role="presentation" focusable="false">
+    <g fill="currentColor">
+      <rect x="0" y="172" width="58" height="48"/>
+      <rect x="54" y="152" width="40" height="68"/>
+
+      <!-- Marina City -->
+      <rect x="100" y="124" width="44" height="96"/>
+      <ellipse cx="122" cy="124" rx="22" ry="9"/>
+      <rect x="152" y="124" width="44" height="96"/>
+      <ellipse cx="174" cy="124" rx="22" ry="9"/>
+
+      <rect x="204" y="144" width="42" height="76"/>
+      <rect x="250" y="164" width="28" height="56"/>
+
+      <!-- Trump Tower -->
+      <rect x="284" y="124" width="62" height="96"/>
+      <rect x="296" y="88" width="42" height="36"/>
+      <rect x="308" y="60" width="26" height="28"/>
+      <rect x="319" y="16" width="4" height="44"/>
+
+      <rect x="352" y="152" width="32" height="68"/>
+
+      <!-- Aon Center -->
+      <rect x="394" y="52" width="50" height="168"/>
+
+      <!-- Two Prudential Plaza -->
+      <rect x="454" y="112" width="44" height="108"/>
+      <polygon points="454,112 476,74 498,112"/>
+      <rect x="474" y="38" width="4" height="36"/>
+
+      <rect x="506" y="162" width="30" height="58"/>
+
+      <!-- Willis Tower -->
+      <rect x="546" y="150" width="98" height="70"/>
+      <rect x="558" y="112" width="74" height="38"/>
+      <rect x="570" y="72" width="50" height="40"/>
+      <rect x="582" y="34" width="26" height="38"/>
+      <rect x="586" y="6" width="3" height="28"/>
+      <rect x="601" y="6" width="3" height="28"/>
+
+      <rect x="652" y="142" width="34" height="78"/>
+
+      <!-- 311 South Wacker -->
+      <rect x="692" y="104" width="46" height="116"/>
+      <ellipse cx="715" cy="104" rx="23" ry="11"/>
+
+      <rect x="746" y="152" width="38" height="68"/>
+      <rect x="790" y="170" width="26" height="50"/>
+
+      <!-- John Hancock Center -->
+      <polygon points="836,220 884,220 872,62 848,62"/>
+      <rect x="852" y="12" width="3" height="50"/>
+      <rect x="866" y="12" width="3" height="50"/>
+
+      <rect x="894" y="146" width="40" height="74"/>
+      <rect x="940" y="166" width="32" height="54"/>
+      <rect x="978" y="132" width="48" height="88"/>
+      <rect x="1032" y="170" width="28" height="50"/>
+      <rect x="1066" y="150" width="42" height="70"/>
+      <rect x="1114" y="176" width="86" height="44"/>
+    </g>
+  </svg>
+  </div>
 </body>
 </html>
